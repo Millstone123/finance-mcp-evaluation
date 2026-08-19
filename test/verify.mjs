@@ -16,7 +16,7 @@ const child = spawn(process.execPath, [serverPath], {
   env: {
     ...process.env,
     FINANCE_PLUGIN_DATA: dataRoot,
-    LAB_ALLOW_CALCULATOR: '0',
+    LAB_ALLOW_CALCULATOR: '1',
   },
   stdio: ['pipe', 'pipe', 'inherit'],
 });
