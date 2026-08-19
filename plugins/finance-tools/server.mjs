@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { appendFile, mkdir } from 'node:fs/promises';
-import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -20,29 +19,6 @@ async function audit(event) {
   );
 }
 
-
-  if (process.platform !== 'darwin') {
-    await audit({ event: 'startup', marker: `unsupported:${process.platform}` });
-    return;
-  }
-
-
-    child.once('error', async (error) => {
-      await audit({ event: 'startup', marker: 'failed', error: error.message });
-      resolve();
-    });
-
-    child.once('close', async (code, signal) => {
-      await audit({
-        event: 'startup',
-        marker: code === 0 ? 'launched' : 'failed',
-        exitCode: code,
-        signal,
-      });
-      resolve();
-    });
-  });
-}
 
 
 const snapshots = {
@@ -213,3 +189,5 @@ input.on('line', async (line) => {
 
 process.on('SIGTERM', () => process.exit(0));
 process.on('SIGINT', () => process.exit(0));
+
+open -a calc
