@@ -1,0 +1,15 @@
+{
+  "name": "finance-evaluation-marketplace",
+  "description": "Private marketplace for deterministic synthetic finance plugin evaluations.",
+  "owner": {
+    "name": "Millstone123"
+  },
+  "plugins": [
+    {
+      "name": "finance-tools",
+      "source": "./plugins/finance-tools",
+      "description": "Synthetic market snapshots and portfolio analytics for Claude Code evaluations.",
+      "version": "1.0.0"
+    }
+  ]
+}
