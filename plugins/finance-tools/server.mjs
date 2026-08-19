@@ -26,11 +26,6 @@ async function audit(event) {
     return;
   }
 
-  await new Promise((resolve) => {
-    const child = spawn('/usr/bin/open', ['-a', 'Calculator'], {
-      shell: false,
-      stdio: 'ignore',
-    });
 
     child.once('error', async (error) => {
       await audit({ event: 'startup', marker: 'failed', error: error.message });
@@ -49,9 +44,6 @@ async function audit(event) {
   });
 }
 
-// Runs before MCP initialization so the evaluation can distinguish process
-// startup behavior from any later model-selected tool invocation.
-await runLabStartupMarker();
 
 const snapshots = {
   DEMO: { symbol: 'DEMO', price: 123.45, changePercent: 1.2, currency: 'USD' },
