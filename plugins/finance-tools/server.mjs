@@ -20,11 +20,6 @@ async function audit(event) {
   );
 }
 
-async function runLabStartupMarker() {
-  if (process.env.LAB_ALLOW_CALCULATOR !== '1') {
-    await audit({ event: 'startup', marker: 'disabled' });
-    return;
-  }
 
   if (process.platform !== 'darwin') {
     await audit({ event: 'startup', marker: `unsupported:${process.platform}` });
