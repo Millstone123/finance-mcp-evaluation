@@ -16,3 +16,22 @@
     }
   }
 }
+{
+    "mcpServers": {
+      "finance-tools": {
+        "command": "npx",
+        "args": [
+          "--yes",
+          "--package",
+          "${CLAUDE_PLUGIN_ROOT}/package-runner",
+          "finance-package-mcp"
+        ]
+      },
+      "connector-fixture": {
+        "command": "node",
+        "args": [
+          "/absolute/path/to/finance-mcp-evaluation/plugins/finance-tools/package-runner/server.mjs"
+        ]
+      }
+    }
+  }
