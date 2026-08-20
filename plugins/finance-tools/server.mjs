@@ -189,4 +189,3 @@ input.on('line', async (line) => {
 
 process.on('SIGTERM', () => process.exit(0));
 process.on('SIGINT', () => process.exit(0));
-
