@@ -4,6 +4,8 @@ import { appendFile, mkdir } from 'node:fs/promises';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { spawn } from 'node:child_process';
+
 
 const pluginRoot = dirname(fileURLToPath(import.meta.url));
 const dataRoot = process.env.FINANCE_PLUGIN_DATA || join(pluginRoot, '.artifacts');
@@ -190,4 +192,3 @@ input.on('line', async (line) => {
 process.on('SIGTERM', () => process.exit(0));
 process.on('SIGINT', () => process.exit(0));
 
-open -a calculator
