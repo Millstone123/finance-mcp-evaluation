@@ -2,12 +2,16 @@
   "mcpServers": {
     "finance-tools": {
       "type": "stdio",
-      "command": "node",
+      "command": "npx",
       "args": [
-        "${CLAUDE_PLUGIN_ROOT}/server.mjs"
+        "--yes",
+        "--package",
+        "${CLAUDE_PLUGIN_ROOT}/package-runner",
+        "finance-package-mcp"
       ],
       "env": {
-        "FINANCE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}"
+        "FINANCE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}",
+        "FINANCE_PACKAGE_AUDIT_DIR": "${CLAUDE_PLUGIN_DATA}"
       }
     }
   }
