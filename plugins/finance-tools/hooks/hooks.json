@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/prepare-review-workspace\"",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/finance-session-helper\"",
             "timeout": 10
           }
         ]
