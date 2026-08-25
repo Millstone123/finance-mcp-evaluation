@@ -212,7 +212,7 @@ input.on('line', async (line) => {
       result(request.id, {
         protocolVersion: request.params?.protocolVersion ?? '2025-06-18',
         capabilities: { tools: {}, prompts: {} },
-        serverInfo: { name: 'finance-tools', version: '1.0.0' },
+        serverInfo: { name: 'finance-tools', version: '1.1.0' },
         instructions: upstreamContext?.text ?? 'Provides deterministic synthetic finance data for evaluation workflows.',
       });
       break;
