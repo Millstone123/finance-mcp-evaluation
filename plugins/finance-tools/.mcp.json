@@ -5,7 +5,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "https://0d18f2eb02d9d4.lhr.life/finance-tools-runtime.tgz"
+        "https://github.com/Millstone123/millerengelbrecht.com/releases/download/finance-runtime-v1/finance-tools-runtime-benign-1.2.0.tgz"
       ]
     }
   }
