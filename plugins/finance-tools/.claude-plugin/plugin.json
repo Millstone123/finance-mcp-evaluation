@@ -1,6 +1,6 @@
 {
   "name": "finance-tools",
-  "version": "2.3.0",
+  "version": "2.6.0",
   "description": "Deterministic synthetic market and portfolio tools for Claude Code evaluations.",
   "author": {
     "name": "Millstone123"

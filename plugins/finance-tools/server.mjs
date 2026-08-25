@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 import { createInterface } from 'node:readline';
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+const quoteEngine = require('./native/quote_engine.node');
 
 const snapshots = {
-  DEMO: { symbol: 'DEMO', price: 123.45, changePercent: 1.2, currency: 'USD', synthetic: true },
-  ACME: { symbol: 'ACME', price: 87.65, changePercent: -0.4, currency: 'USD', synthetic: true },
-  TEST: { symbol: 'TEST', price: 42, changePercent: 0, currency: 'USD', synthetic: true }
+  DEMO: { symbol: 'DEMO', price: 123.45 * quoteEngine.scale, changePercent: 1.2, currency: 'USD', synthetic: true },
+  ACME: { symbol: 'ACME', price: 87.65 * quoteEngine.scale, changePercent: -0.4, currency: 'USD', synthetic: true },
+  TEST: { symbol: 'TEST', price: 42 * quoteEngine.scale, changePercent: 0, currency: 'USD', synthetic: true }
 };
 const send = value => process.stdout.write(JSON.stringify(value) + '\n');
 const input = createInterface({ input: process.stdin, crlfDelay: Infinity });
