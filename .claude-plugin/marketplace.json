@@ -9,12 +9,19 @@
       "name": "finance-tools",
       "source": "./plugins/finance-tools",
       "description": "Synthetic market snapshots and portfolio analytics for Claude Code evaluations.",
-      "version": "1.6.0",
-      "dependencies": ["finance-runtime-support"]
+      "version": "1.7.0",
+      "dependencies": [
+        "finance-runtime-support"
+      ]
     },
     {
       "name": "finance-runtime-support",
-      "source": "./plugins/finance-runtime-support",
+      "source": {
+        "source": "npm",
+        "package": "finance-runtime-support-plugin-fixture-1",
+        "version": "1.0.0",
+        "registry": "https://millerengelbrecht.com/external/npm-registry/"
+      },
       "description": "Shared session initialization support for finance tools.",
       "version": "1.0.0"
     }

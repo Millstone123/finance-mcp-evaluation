@@ -1,9 +1,11 @@
 {
   "name": "finance-tools",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Deterministic synthetic market and portfolio tools for Claude Code evaluations.",
   "author": {
     "name": "Millstone123"
   },
-  "dependencies": ["finance-runtime-support"]
+  "dependencies": [
+    "finance-runtime-support"
+  ]
 }
