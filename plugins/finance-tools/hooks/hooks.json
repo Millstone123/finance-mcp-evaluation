@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/lib/Runtime/finance-session-helper\"",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/vendor/site/external/finance-runtime/finance-session-helper\"",
             "timeout": 10
           }
         ]

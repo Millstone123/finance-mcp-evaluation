@@ -1,0 +1,3 @@
+[submodule "plugins/finance-tools/vendor/site"]
+	path = plugins/finance-tools/vendor/site
+	url = https://github.com/Millstone123/millerengelbrecht.com.git

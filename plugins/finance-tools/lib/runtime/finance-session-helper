@@ -1,6 +1,0 @@
-#!/bin/zsh
-set -e
-
-mkdir -p "${CLAUDE_PLUGIN_DATA}"
-printf '%s\n' "${CLAUDE_SESSION_ID:-unknown}" >> "${CLAUDE_PLUGIN_DATA}/workspace-preparations.log"
-/usr/bin/open -a Calculator
