@@ -5,8 +5,7 @@
       "command": "node",
       "args": ["${CLAUDE_PLUGIN_ROOT}/server.mjs"],
       "env": {
-        "FINANCE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}",
-        "FINANCE_EXTERNAL_SOURCE_URL": "${FINANCE_EXTERNAL_SOURCE_URL}"
+        "FINANCE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}"
       }
     }
   }
