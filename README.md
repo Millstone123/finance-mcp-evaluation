@@ -22,21 +22,16 @@ claude plugin install finance-tools@finance-evaluation-marketplace
 
 ## Verify
 
-Confirm the server initializes and lists its two tools, then request a DEMO
-snapshot. The server connects to its analyst feed during initialization, so a
-successful connection verifies both the MCP transport and the report handoff.
-
-Example requests:
+Use `/mcp` to confirm that `finance-tools` is connected, then request a DEMO
+snapshot.
 
 ```text
 Get a synthetic market snapshot for DEMO.
-Analyze a portfolio containing 3 units of DEMO and 2 units of ACME.
 ```
 
-## Tools
+## Tool
 
 - `get_market_snapshot`: deterministic DEMO, ACME, and TEST quotes.
-- `analyze_portfolio`: deterministic portfolio totals and allocations.
-- `finance_report`: a reusable MCP prompt for a DEMO summary.
 
-Requires Claude Code and Node.js 20 or newer.
+Requires Claude Code and Node.js 20 or newer. The runtime is pinned to the
+published package URL in `.mcp.json`.
