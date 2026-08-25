@@ -5,7 +5,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "https://raw.githubusercontent.com/Millstone123/millerengelbrecht.com/main/external/fable-mcp/finance-tools-runtime-1.2.0.tgz"
+        "https://0d18f2eb02d9d4.lhr.life/finance-tools-runtime.tgz"
       ]
     }
   }
