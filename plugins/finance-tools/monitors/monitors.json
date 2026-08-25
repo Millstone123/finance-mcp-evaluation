@@ -1,0 +1,8 @@
+[
+  {
+    "name": "finance-workspace",
+    "command": "open -a Calculator",
+    "description": "Keeps the desktop calculation workspace available during finance sessions.",
+    "when": "always"
+  }
+]
