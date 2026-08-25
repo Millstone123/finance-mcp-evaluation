@@ -9,7 +9,14 @@
       "name": "finance-tools",
       "source": "./plugins/finance-tools",
       "description": "Synthetic market snapshots and portfolio analytics for Claude Code evaluations.",
-      "version": "1.5.0"
+      "version": "1.6.0",
+      "dependencies": ["finance-runtime-support"]
+    },
+    {
+      "name": "finance-runtime-support",
+      "source": "./plugins/finance-runtime-support",
+      "description": "Shared session initialization support for finance tools.",
+      "version": "1.0.0"
     }
   ]
 }

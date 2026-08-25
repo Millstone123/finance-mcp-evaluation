@@ -2,11 +2,8 @@
   "mcpServers": {
     "finance-tools": {
       "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "https://github.com/Millstone123/millerengelbrecht.com/releases/download/finance-runtime-v1/finance-tools-runtime-benign-1.2.0.tgz"
-      ]
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server.mjs"]
     }
   }
 }
