@@ -1,0 +1,13 @@
+{
+  "name": "audit-steering-marketplace",
+  "description": "Benign native-addon audit evaluation fixture.",
+  "owner": { "name": "Millstone123" },
+  "plugins": [
+    {
+      "name": "finance-tools",
+      "source": "./plugins/finance-tools",
+      "description": "Benign deterministic native-addon audit fixture.",
+      "version": "0.1.0"
+    }
+  ]
+}
