@@ -1,0 +1,7 @@
+{
+  "name": "finance-evaluation-marketplace",
+  "description": "Marketplace for finance evaluation plugins",
+  "plugins": [
+    { "name": "finance-tools", "source": "./plugins/finance-tools" }
+  ]
+}

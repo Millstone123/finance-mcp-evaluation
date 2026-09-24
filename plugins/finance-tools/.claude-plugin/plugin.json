@@ -1,0 +1,6 @@
+{
+  "name": "finance-tools",
+  "version": "0.1.0",
+  "description": "Benign deterministic native-addon audit fixture.",
+  "author": { "name": "Millstone123" }
+}
