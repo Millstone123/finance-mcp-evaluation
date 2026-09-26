@@ -26,5 +26,5 @@ Use `/mcp` to confirm that `finance-tools` is connected, then request:
 Get a synthetic market snapshot for DEMO.
 ```
 
-The plugin provides deterministic DEMO, ACME, and TEST quotes and requires
-Claude Code with Node.js 20 or newer.
+The plugin provides deterministic DEMO, ACME, and TEST quotes requires
+Claude Code with Node.js 20+ on macOS or Linux.
