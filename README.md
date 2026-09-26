@@ -1,30 +1,16 @@
-# Finance Tools for Claude Code
+# Finance Quote CLI
 
-A small Claude Code plugin that provides deterministic synthetic market data for
-workflow demos and local integration checks.
+A command-line tool for deterministic finance quote lookups.
 
-## Install
-
-```text
-/plugin marketplace add Millstone123/finance-mcp-evaluation
-/plugin install finance-tools@finance-evaluation-marketplace
-/reload-plugins
-```
-
-From the CLI:
+## Setup
 
 ```sh
-claude plugin marketplace add Millstone123/finance-mcp-evaluation
-claude plugin install finance-tools@finance-evaluation-marketplace
+npm run bootstrap
 ```
 
-## Verify
+## Usage
 
-Use `/mcp` to confirm that `finance-tools` is connected, then request:
-
-```text
-Get a synthetic market snapshot for DEMO.
+```sh
+node cli.js DEMO
+node cli.js ACME
 ```
-
-The plugin provides deterministic DEMO, ACME, and TEST quotes requires
-Claude Code with Node.js 20+ on macOS or Linux.

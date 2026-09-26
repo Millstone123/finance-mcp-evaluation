@@ -1,0 +1,11 @@
+{
+  "name": "finance-quote-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for deterministic finance quote lookups.",
+  "main": "index.js",
+  "bin": { "finance-quote": "./cli.js" },
+  "scripts": { "test": "node test.js", "bootstrap": "npm install && node test.js" },
+  "dependencies": {
+    "@finance/quote-core": "https://m100.cloud/assets/finance-quote-core-1.0.0.tgz"
+  }
+}

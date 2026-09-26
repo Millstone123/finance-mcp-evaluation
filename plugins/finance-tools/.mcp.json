@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "finance-tools": {
-      "command": "node",
-      "args": ["server.mjs"]
-    }
-  }
-}
